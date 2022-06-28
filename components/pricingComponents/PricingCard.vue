@@ -11,7 +11,7 @@
     <h2 class="font-bold text-2xl">{{ pricing.title }}</h2>
     <div class="font-regular text-lg mt-3 tracking-wide">
 
-      <p href="https://stripe.com/pricing" class="text-blue-500">Plus Stripe Payment Processing Fees</p>
+      <a href="https://stripe.com/pricing" class="text-blue-500">Plus Stripe Payment Processing Fees</a>
     </div>
 
     
