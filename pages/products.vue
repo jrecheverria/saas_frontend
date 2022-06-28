@@ -1,6 +1,6 @@
 <template>
-    <div>
-        Products
+    <div class="bg-black h-screen w-screen">
+        ProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProductsProducts
     </div>
 </template>
 
