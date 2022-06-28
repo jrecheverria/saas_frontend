@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+   
     <Hero />
     <Testimonials />
     <Features />

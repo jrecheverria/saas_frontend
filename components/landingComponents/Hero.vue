@@ -57,7 +57,7 @@
                     text-white
                     transition-all
                     duration-200
-                    bg-gray-900
+                    bg-green-300
                     border border-transparent
                     rounded-xl
                     focus:outline-none
@@ -69,53 +69,10 @@
                   "
                   role="button"
                 >
-                  Sign Up
+                  Start Selling
                 </NuxtLink>
 
-                <a
-                  href="/dashboard"
-                  title=""
-                  class="
-                    inline-flex
-                    items-center
-                    justify-center
-                    px-4
-                    py-4
-                    mt-4
-                    text-lg
-                    font-bold
-                    transition-all
-                    duration-200
-                    bg-transparent
-                    border border-transparent
-                    sm:mt-0
-                    font-pj
-                    rounded-xl
-                    focus:outline-none
-                    focus:ring-2
-                    focus:ring-offset-2
-                    focus:ring-gray-300
-                    hover:bg-gray-200
-                    focus:bg-gray-200
-                  "
-                  role="button"
-                >
-                  <svg
-                    class="w-5 h-5 mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                    />
-                  </svg>
-
-                  Live Demo
-                </a>
+              
               </div>
             </div>
 

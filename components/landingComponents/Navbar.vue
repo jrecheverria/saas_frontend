@@ -1,11 +1,7 @@
 <template>
-  <nav class="static w-full p-3 bg-white mt-3 items-center align-center justify-center mx-auto">
+  <nav class="static flex flex-row w-full p-3 bg-white mt-3 items-center align-center justify-center mx-auto">
     <div class="flex ">
       <!-- Header logo -->
-      <div>
-        
-      </div>
-
       <!-- Mobile toggle -->
       <div class="md:hidden">
         <button @click="drawer">
