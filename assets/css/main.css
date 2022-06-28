@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+   .sidebar-item {
+    @apply  relative flex 
+            items-center justify-center 
+            h-12 w-32 mt-3 mb-3 mx-auto
+            bg-offWhite hover:bg-primary 
+            text-primary hover:text-white
+            rounded-2xl hover:shadow-lg 
+            transition-all duration-300
+   }
+
+   .sidebar-indicator {
+    @apply  absolute w-auto 
+            p-2 m-2 min-w-max -left-12 rounded-md shadow-md 
+            text-white bg-gray-900 
+            text-xs font-bold 
+            transition-all duration-100 scale-0 origin-left;
+   }
+}
