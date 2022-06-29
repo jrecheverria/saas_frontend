@@ -1,5 +1,6 @@
 <template>
-    <div>
-        <sidebar/>
-    </div>
+<div>
+    <sidebar/>
+    <nuxt/>
+</div>
 </template>
