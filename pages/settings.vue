@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col items-center bg-gray-300 h-full">
-    <form action="" class="bg-white rounded-2xl mx-auto my-8 py-2 px-4 ">
-      <div class="flex flex-row my-5"> 
+  <div class="flex flex-col items-center bg-gray-300">
+    <form action="" class="bg-white rounded-2xl mx-8 my-8 py-2 px-4">
+      <div class="flex flex-row my-5 mx-auto">
         <div class="flex flex-col mr-3">
           <div class="mr-3">First Name</div>
           <input class="bg-gray-200" v-model="firstName" placeholder="John" />
@@ -21,7 +21,7 @@
           />
         </div>
       </div>
-       <div class="flex flex-row my-5">
+      <div class="flex flex-row my-5">
         <div class="flex flex-col w-full">
           <div class="mr-3">Phone #</div>
           <input
@@ -31,7 +31,7 @@
           />
         </div>
       </div>
-       <div class="flex flex-row my-5">
+      <div class="flex flex-row my-5">
         <div class="flex flex-col w-full">
           <div class="mr-3">Address</div>
           <input
@@ -67,6 +67,15 @@
 
 <script>
 export default {
+  name: "SettingsPage",
   layout: "app",
+  data() {
+    return {
+      firstName: "",
+    };
+  },
+  methods: {
+    async updateUserDetails() {},
+  },
 };
 </script>
