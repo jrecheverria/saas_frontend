@@ -4,6 +4,7 @@
     <sidebar-item pageName="purchases" iconName="user"/>
     <sidebar-item pageName="sales" iconName="credit-card"/>
     <sidebar-item pageName="settings" iconName="gear"/>
+
 </div>
 </template>
 

@@ -18,7 +18,7 @@
                         <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                         <p class="text-xs text-gray-500 dark:text-gray-400">{{ selectedCoverImageName }}</p>
                     </div>
-                    <input id="dropzone-file" type="file" class="hidden" @change="onCoverImageSelected"/>
+                    <input id="dropzone-file" type="file" ref="fileImageInput" class="hidden" @input="onCoverImageSelected"/>
                 </label>
             </div> 
 
@@ -68,7 +68,7 @@
 
         <div class="max-w-lg bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ml-20 mt-5">
             <a href="#">
-                <img class="rounded-t-lg" :src="require(`../static/product-template-image.png`)" alt="" />
+                <img class="rounded-t-lg" src="../static/product-template-image.png" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
@@ -94,7 +94,8 @@ export default {
             productDescription: "",
             imagePath: "", 
             productPrice: "",
-            selectedCoverImage: "../static/product-template-image.png",
+            isUserCoverImageUploaded: false,
+            selectedCoverImage: null,
             selectedCoverImageName: "SVG, PNG, JPG or GIF (MAX. 800x400px)",
             selectedProductFile: null,
             selectedProductFileName: null,
@@ -103,10 +104,17 @@ export default {
         }
     },
     methods: {
-        onCoverImageSelected(event) {
-            console.log(event)
-            this.selectedCoverImage = event.target.files[0]
-            this.selectedCoverImageName = event.target.files[0].name
+        onCoverImageSelected() {
+            let input = this.$refs.fileInput
+            let file = input.files
+            if (file && file[0]) {
+                let reader = new FileReader
+                reader.onload = e => {
+                    this.selectedCoverImage = e.target.result
+                }
+                reader.readAsDataURL(file[0])
+                this.$emit('input', file[0])
+            }
         },
         onProductFileSelected(event) {
             console.log(event)

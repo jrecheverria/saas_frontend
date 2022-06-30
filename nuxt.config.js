@@ -36,6 +36,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/fontawesome',
+    '@nuxtjs/auth'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -53,5 +54,5 @@ export default {
       solid: true,
       brands: true,
     },
-},
+  }
 }
