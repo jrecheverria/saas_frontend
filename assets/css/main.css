@@ -8,7 +8,7 @@
     @apply  relative flex 
             items-center justify-start pl-6
             h-11 w-36 mt-3 mb-3 mx-auto
-            text-lg
+            text-sm
             bg-offWhite hover:bg-primary 
             text-black hover:text-white
             rounded-lg hover:shadow-lg 
