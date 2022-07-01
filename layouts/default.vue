@@ -1,6 +1,6 @@
 <template>
 <div>
-    <sidebar/>
+    <!-- <sidebar/> -->
     <nuxt/>
 </div>
 </template>
