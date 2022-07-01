@@ -36,7 +36,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/fontawesome',
-    '@nuxtjs/auth'
+    '@nuxtjs/auth-next'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -54,5 +54,14 @@ export default {
       solid: true,
       brands: true,
     },
+  },
+
+  auth: {
+    strategies: {
+      auth0: {
+        
+      }
+    }
   }
+  
 }
