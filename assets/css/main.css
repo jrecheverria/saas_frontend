@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
    .sidebar-item {
     @apply  relative flex 
             items-center justify-start pl-6
@@ -32,5 +31,13 @@
             text-white
             rounded-lg hover:shadow-lg 
             transition-all duration-200
+   }
+
+   .form-label {
+        @apply  mt-6 text-gray-600 text-sm font-semibold
+   }
+
+   .app-wrapper {
+        @apply ml-14 flex flex-row
    }
 }
