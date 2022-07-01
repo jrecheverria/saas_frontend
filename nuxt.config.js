@@ -59,7 +59,6 @@ export default {
   auth: {
     strategies: {
       auth0: {
-        
       }
     }
   }
