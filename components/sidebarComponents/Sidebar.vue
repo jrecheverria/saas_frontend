@@ -4,16 +4,10 @@
     <sidebar-item pageName="purchases" iconName="user"/>
     <sidebar-item pageName="sales" iconName="credit-card"/>
     <sidebar-item pageName="settings" iconName="gear"/>
-    <button class="text-black" @click="onLogin">Click here to login</button>
 </div>
 </template>
 
 <script>
 export default {
-  methods: {
-    onLogin() {
-        this.$auth.loginWith('auth0')
-    }
-  }
 }
 </script>

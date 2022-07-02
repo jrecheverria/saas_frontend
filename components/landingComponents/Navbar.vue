@@ -30,18 +30,18 @@
           <li><nuxt-link to="/pricing" class="">Pricing</nuxt-link></li>
           <li><nuxt-link to="/roadmap" class="">Roadmap</nuxt-link></li>
           <li><nuxt-link to="/login" class="">Login</nuxt-link></li>
-          <li><nuxt-link class="
+          <li><button class="
                 cta
-                bg-indigo-500
-                hover:bg-indigo-600
+                bg-primary
+                hover:bg-selected
                 px-3
                 py-2
                 rounded
                 text-white
                 font-semibold
               "
-              to="/signup"
-              >Start Selling</nuxt-link></li>
+              @click="onLogin"
+              >Start Selling</button></li>
         </ul>
       </div>
 
@@ -245,6 +245,9 @@ export default {
     drawer() {
       this.isOpen = !this.isOpen
     },
+    onLogin() {
+        this.$auth.loginWith('auth0')
+    }
   },
   watch: {
     isOpen: {

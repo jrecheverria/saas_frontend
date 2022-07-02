@@ -57,7 +57,7 @@
                     text-white
                     transition-all
                     duration-200
-                    bg-green-300
+                    bg-primary
                     border border-transparent
                     rounded-xl
                     focus:outline-none
@@ -65,7 +65,7 @@
                     focus:ring-offset-2
                     focus:ring-gray-900
                     font-pj
-                    hover:bg-gray-600
+                    hover:bg-selected
                   "
                   role="button"
                 >

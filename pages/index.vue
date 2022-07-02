@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbar/>
+   <navbar/>
     <Hero />
     <Testimonials />
     <Features />
@@ -16,12 +16,11 @@ import Hero from '../components/landingComponents/Hero.vue'
 import Features from '../components/landingComponents/Features.vue'
 import CTA from '../components/landingComponents/CTA.vue'
 import Testimonials from '../components/landingComponents/Testimonials.vue'
-import Topbar from '../components/topbarComponents/Topbar.vue'
 
 
 
 export default Vue.extend({
-  components: { Navbar, Hero, Features, CTA, Testimonials, Topbar },
+  components: { Navbar, Hero, Features, CTA, Testimonials },
   name: 'IndexPage',
 
 })
