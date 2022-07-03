@@ -1,8 +1,7 @@
 <template>
 <router-link :to="`/${pageName}`">
-    <div class="sidebar-item group">
-        <span class="pr-3"><fa :icon="['fas', `${iconName}`]" /></span>
-        {{ pageName }}
+    <div class="product-button group">
+        {{ buttonText }}
     </div>
 </router-link>
 </template>
@@ -15,11 +14,10 @@ export default {
             type: String,
             required: true
         },
-        iconName: {
+        buttonText: {
             type: String,
             required: true
         }
     }
 }
 </script>
-

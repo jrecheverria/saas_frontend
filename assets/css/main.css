@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-
    .sidebar-item {
     @apply  relative flex 
-            items-center justify-center 
-            h-12 w-32 mt-3 mb-3 mx-auto
+            items-center justify-start pl-6
+            h-11 w-36 mt-3 mb-3 mx-auto
+            text-sm
             bg-offWhite hover:bg-primary 
-            text-primary hover:text-white
-            rounded-2xl hover:shadow-lg 
-            transition-all duration-300
+            text-black hover:text-white
+            rounded-lg hover:shadow-lg 
+            transition-all duration-200
    }
 
    .sidebar-indicator {
@@ -20,5 +20,24 @@
             text-white bg-gray-900 
             text-xs font-bold 
             transition-all duration-100 scale-0 origin-left;
+   }
+
+   .product-button {
+        @apply  relative flex 
+            items-center justify-center
+            h-11 w-36 mt-3 mb-3 mx-auto
+            text-sm
+            bg-primary hover:bg-selected
+            text-white
+            rounded-lg hover:shadow-lg 
+            transition-all duration-200
+   }
+
+   .form-label {
+        @apply  mt-6 text-gray-600 text-sm font-semibold
+   }
+
+   .app-wrapper {
+        @apply ml-14 flex flex-row
    }
 }

@@ -1,7 +1,7 @@
 <template>
-    <div>
-        Sales
-    </div>
+<div class="bg-black w-screen h-screen">
+    <topbar pageName="Sales"/>
+</div>
 </template>
 
 <script>

@@ -1,5 +1,13 @@
 <template>
-    <div>
-        <sidebar/>
-    </div>
+<div>
+    <!-- <sidebar/> -->
+    <nuxt/>
+</div>
 </template>
+
+<script>
+
+export default {
+}
+
+</script>

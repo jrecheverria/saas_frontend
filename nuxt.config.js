@@ -35,6 +35,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/auth-next'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -43,5 +45,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  fontawesome: {
+    component: 'Fa',
+    suffix: false,
+    icons: {
+      solid: true,
+      brands: true,
+    },
   }
 }
