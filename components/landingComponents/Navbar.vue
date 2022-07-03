@@ -40,7 +40,6 @@
                 text-white
                 font-semibold
               "
-              @click="onLogin"
               >Start Selling</button></li>
         </ul>
       </div>
@@ -244,9 +243,6 @@ export default {
   methods: {
     drawer() {
       this.isOpen = !this.isOpen
-    },
-    onLogin() {
-        this.$auth.loginWith('auth0')
     }
   },
   watch: {

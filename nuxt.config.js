@@ -54,16 +54,5 @@ export default {
       solid: true,
       brands: true,
     },
-  },
-
-  auth: {
-    strategies: {
-      auth0: {
-        domain: 'dev-brzfp8re.us.auth0.com',
-        clientId: 'ig0nCmvThgvbqZt4VZAjWXSjdd9Z7l9k',
-        audience: 'https://dev-brzfp8re.us.auth0.com/api/v2/'
-      }
-    }
   }
-  
 }
