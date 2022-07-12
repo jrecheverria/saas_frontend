@@ -1,64 +1,111 @@
 <template>
   <div class="flex flex-col items-center bg-gray-200 h-screen justify-center">
-    <form action="" class="bg-white rounded-2xl mx-8 my-8 py-2 px-4">
-      <div class="flex flex-row my-5 mx-auto">
-        <div class="flex flex-col mr-3">
-          <div class="settings-label">First Name</div>
-          <input class="settings-item" v-model="firstName" placeholder="John" />
+    <form
+      action=""
+      class="bg-white rounded-2xl mx-8 my-8 py-2 px-4 flex flex-row"
+    >
+      <div class="flex flex-col">
+        <div class="flex flex-row my-3 mx-auto">
+          <div class="flex flex-col mr-3">
+            <div class="settings-label">First Name</div>
+            <input
+              class="settings-item"
+              v-model="firstName"
+              placeholder="John"
+            />
+          </div>
+          <div class="flex flex-col ml-3">
+            <div class="settings-label">Last Name</div>
+            <input
+              class="settings-item"
+              v-model="lastName"
+              placeholder="Smith"
+            />
+          </div>
         </div>
-        <div class="flex flex-col ml-3">
-          <div class="settings-label">Last Name</div>
-          <input class="settings-item" v-model="lastName" placeholder="Smith" />
+        <div class="flex flex-row my-3">
+          <div class="flex flex-col w-full">
+            <div class="settings-label">Email</div>
+            <input
+              class="settings-item w-full"
+              v-model="email"
+              placeholder="john.smith@gmail.com"
+            />
+          </div>
+        </div>
+        <div class="flex flex-row my-3">
+          <div class="flex flex-col w-full">
+            <div class="settings-label">Phone #</div>
+            <input
+              class="settings-item w-full"
+              v-model="phone"
+              placeholder="123-456-7890"
+            />
+          </div>
+        </div>
+        <div class="flex flex-row my-3">
+          <div class="flex flex-col w-full">
+            <div class="settings-label">Address</div>
+            <input
+              class="settings-item w-full"
+              v-model="address"
+              placeholder="123 ABC Drive"
+            />
+          </div>
+        </div>
+        <div class="flex flex-row my-5">
+          <div class="flex flex-col mr-3">
+            <div class="settings-label">City</div>
+            <input class="settings-item" v-model="city" placeholder="Seattle" />
+          </div>
+          <div class="flex flex-col ml-3">
+            <div class="settings-label">State</div>
+            <input
+              class="settings-item"
+              v-model="state"
+              placeholder="Washington"
+            />
+          </div>
+        </div>
+        <div class="flex flex-row my-3">
+          <div class="flex flex-col mr-3">
+            <div class="settings-label">Zip</div>
+            <input class="settings-item" v-model="zip" placeholder="10001" />
+          </div>
+          <div class="flex flex-col ml-3">
+            <div class="settings-label">Country</div>
+            <input class="settings-item" v-model="country" placeholder="USA" />
+          </div>
         </div>
       </div>
-      <div class="flex flex-row my-5">
-        <div class="flex flex-col w-full">
-          <div class="settings-label">Email</div>
-          <input
-            class="settings-item w-full"
-            v-model="email"
-            placeholder="john.smith@gmail.com"
-          />
+      <div class="flex flex-col ml-20">
+        <div class="flex flex-row my-3">
+          <div class="flex flex-col w-full">
+            <div class="settings-label">Credit Card #</div>
+            <input
+              class="settings-item w-full"
+              v-model="email"
+              placeholder="4747 4747 4747 4747"
+            />
+          </div>
         </div>
-      </div>
-      <div class="flex flex-row my-5">
-        <div class="flex flex-col w-full">
-          <div class="settings-label">Phone #</div>
-          <input
-            class="settings-item w-full"
-            v-model="phone"
-            placeholder="123-456-7890"
-          />
-        </div>
-      </div>
-      <div class="flex flex-row my-5">
-        <div class="flex flex-col w-full">
-          <div class="settings-label">Address</div>
-          <input
-            class="settings-item w-full"
-            v-model="address"
-            placeholder="123 ABC Drive"
-          />
-        </div>
-      </div>
-      <div class="flex flex-row my-5">
-        <div class="flex flex-col mr-3">
-          <div class="settings-label">City</div>
-          <input class="settings-item" v-model="city" placeholder="Seattle" />
-        </div>
-        <div class="flex flex-col ml-3">
-          <div class="settings-label">State</div>
-          <input class="settings-item" v-model="state" placeholder="Washington" />
-        </div>
-      </div>
-      <div class="flex flex-row my-5">
-        <div class="flex flex-col mr-3">
-          <div class="settings-label">Zip</div>
-          <input class="settings-item" v-model="zip" placeholder="10001" />
-        </div>
-        <div class="flex flex-col ml-3">
-          <div class="settings-label">Country</div>
-          <input class="settings-item" v-model="country" placeholder="USA" />
+        <div class="flex flex-row my-3 mx-auto">
+          <div class="flex flex-col mr-3">
+            <div class="settings-label">Exp Date.</div>
+            <input
+              class="settings-item"
+              v-model="firstName"
+              placeholder="01/24"
+            />
+          </div>
+          <div class="flex flex-col ml-3">
+            <div class="settings-label">CVV</div>
+            <input
+              class="settings-item"
+              v-model="lastName"
+              placeholder="123"
+            />
+          </div>
         </div>
       </div>
     </form>
