@@ -28,7 +28,7 @@
             >
           </li>
           <li><nuxt-link to="/pricing" class="">Pricing</nuxt-link></li>
-          <li><nuxt-link to="/roadmap" class="">Roadmap</nuxt-link></li>
+         
           <li><nuxt-link to="/login" class="">Login</nuxt-link></li>
           <li><nuxt-link class="
                 cta

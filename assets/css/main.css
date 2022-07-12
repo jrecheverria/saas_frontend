@@ -21,4 +21,12 @@
             text-xs font-bold 
             transition-all duration-100 scale-0 origin-left;
    }
+
+   .settings-label {
+        @apply font-bold ml-2 mb-2;
+   }
+
+   .settings-item {
+        @apply font-semibold rounded-2xl border-2 tracking-wide p-2;
+   }
 }
